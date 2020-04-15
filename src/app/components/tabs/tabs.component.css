@@ -6,6 +6,7 @@
 .tabs li {
   display: inline;
   padding-right: 50px;
+  padding-top: 25px;
 }
 
 .tabs li a {
