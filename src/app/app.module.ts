@@ -7,6 +7,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { ButtonComponent } from './components/button/button.component';
 import { LoginComponent } from './pages/login/login.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { LoginComponent } from './pages/login/login.component';
     HomeComponent,
     CardComponent,
     ButtonComponent,
-    LoginComponent
+    LoginComponent,
+    UserCardComponent,
+    TabsComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
