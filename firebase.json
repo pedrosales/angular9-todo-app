@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "TodoAngular9",
+      "public": "dist/TodoAngular9",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

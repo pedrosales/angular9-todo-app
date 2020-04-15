@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pedro-todos": {
+      "hosting": {
+        "TodoAngular9": [
+          "pedro-todos"
+        ]
+      }
+    }
+  }
+}

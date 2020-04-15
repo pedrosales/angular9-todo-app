@@ -117,8 +117,13 @@
               "devServerTarget": "TodoAngular9:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "TodoAngular9"
 }

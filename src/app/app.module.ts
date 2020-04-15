@@ -15,6 +15,11 @@ import { TodayComponent } from './pages/today/today.component';
 import { TomorrowComponent } from './pages/tomorrow/tomorrow.component';
 import { NewComponent } from './pages/new/new.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +37,9 @@ import { NewComponent } from './pages/new/new.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
