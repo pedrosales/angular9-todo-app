@@ -2,17 +2,17 @@
   <ul class="tabs">
     <li>
       <h1>
-        <a href="#">Hoje</a>
+        <a routerLink="/" routerLinkActive="selected" [routerLinkActiveOptions]="{exact: true}">Hoje</a>
       </h1>
     </li>
     <li>
-      <h1><a href="#">Amanhã</a></h1>
+      <h1><a routerLink="/tomorrow" routerLinkActive="selected">Amanhã</a></h1>
     </li>
     <li>
-      <h1><a href="#" class="selected">Todas</a></h1>
+      <h1><a routerLink="/all" routerLinkActive="selected">Todas</a></h1>
     </li>
     <li>
-      <h1><a href="#">Nova</a></h1>
+      <h1><a routerLink="/new" routerLinkActive="selected">Nova</a></h1>
     </li>
   </ul>
 </div>
