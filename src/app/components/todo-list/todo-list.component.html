@@ -1,29 +1,11 @@
-<ul class="todos">
-  <li>
-    <div>
+<ul class="todos" *ngIf="todos">
+  <li *ngFor="let todo of todos">
+    <div *ngIf="!todo.done">
       <a href="#" class="remove-item"><i class="fa fa-check"></i></a>
     </div>
-    <a class="done">
-      Ir ao supermercado <br>
-      <small>14/02/2020</small>
-    </a>
-  </li>
-  <li>
-    <div>
-      <a href="#" class="remove-item"><i class="fa fa-check"></i></a>
-    </div>
-    <a href="#">
-      Ir ao supermercado <br>
-      <small>14/02/2020</small>
-    </a>
-  </li>
-  <li>
-    <div>
-      <a href="#" class="remove-item"><i class="fa fa-check"></i></a>
-    </div>
-    <a href="#">
-      Ir ao supermercado <br>
-      <small>14/02/2020</small>
+    <a [ngClass]="{ 'done' : todo.done }">
+      {{todo.title}} <br>
+      <small>{{todo.date | date: 'dd/MM/yyyy'}}</small>
     </a>
   </li>
 </ul>
