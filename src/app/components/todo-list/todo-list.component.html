@@ -1,7 +1,7 @@
 <ul class="todos" *ngIf="todos">
   <li *ngFor="let todo of todos">
     <div *ngIf="!todo.done">
-      <a href="#" class="remove-item"><i class="fa fa-check"></i></a>
+      <a (click)="markAsDone(todo)" class="remove-item"><i class="fa fa-check"></i></a>
     </div>
     <a [ngClass]="{ 'done' : todo.done }">
       {{todo.title}} <br>
